@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body.light {
+  background-color: #f8f9fa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body.dark {
+  background-color: #212529;
+}
+
+.navbar.light {
+  background-color: #e3f2fd;
+}
+
+.navbar.dark {
+  background-color: #343a40;
+}
+
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #f2f2f2;
+  /* Light mode background color */
+  color: #333;
+  /* Default text color in light mode */
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode h5,
+.light-mode h6 {
+  color: #333;
+  /* Headings text color in light mode */
+}
+
+.light-mode input[type="text"],
+.light-mode input[type="email"],
+.light-mode input[type="number"],
+.light-mode textarea {
+  background-color: #fff;
+  /* Input background color in light mode */
+  color: #333;
+  /* Input text color in light mode */
+  border-color: #ccc;
+  /* Input border color in light mode */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  /* Dark mode background color */
+  color: #f2f2f2;
+  /* Default text color in dark mode */
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #f2f2f2;
+  /* Headings text color in dark mode */
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="number"],
+.dark-mode textarea {
+  background-color: #444;
+  /* Input background color in dark mode */
+  color: #f2f2f2;
+  /* Input text color in dark mode */
+  border-color: #666;
+  /* Input border color in dark mode */
 }
